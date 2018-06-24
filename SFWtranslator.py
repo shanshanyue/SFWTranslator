@@ -1,20 +1,16 @@
 # wb.py
 # Shanyue Li, June 16
 import os
-import http.client, urllib.parse, uuid
-import csv
+import http.client, uuid
 import json
-import pdb
 import requests
-import datetime
 import sys
-from operator import itemgetter
 
 def main():
   print("--------------------------------------------------------------")
   print("Please input the content you want to translate ")
   print("--------------------------------------------------------------")
-  keyword = input("input here: ")
+  keyword = input("Input here: ")
 
 
   translated_text = profanity(keyword)[0]["text"]
@@ -110,8 +106,8 @@ def profanity(keyword):
   output = json.loads(result)
   # output = json.dumps(json.loads(result), indent=4, ensure_ascii=False)
   output = output[0]["translations"]
+  # print(output)
   return (output)
 
 if __name__ == "__main__":
   main()
-
