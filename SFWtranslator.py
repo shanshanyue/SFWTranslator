@@ -1,4 +1,4 @@
-# wb.py
+# SFWTranslator.py
 # Shanyue Li, June 16
 import os
 import http.client, uuid
@@ -81,6 +81,7 @@ def word_has_profanity(string):
     return False 
 
 def profanity(keyword):
+  #The code is taken from the sample code of Microsoft Translator API
   api_key = os.environ.get("MICROSOFTAZUREAPIKEY") or "OOPS. Please set an environment variable named 'MICROSOFTAZUREAPIKEY'."
   api_key = str(api_key)
   host = 'api.cognitive.microsofttranslator.com'
