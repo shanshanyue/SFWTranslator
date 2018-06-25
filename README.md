@@ -13,6 +13,7 @@ SFWTranslator uses the Microsoft Translator API and it can automatically detect 
 ## Prerequsites
 This package assumes the user is using Python 3. The user can check the installed version on his/her computer by typing  command line "python --version" in the terminal.
 If installation of python 3 is required, please refer to https://www.python.org/downloads/ for further download instructions. 
+This app requires a Microsoft Azure API key for Microsoft Translator. This API key should be added as a variable called MICROSOFTAZUREAPIKEY to the user's bash profile. Users can refer to https://azure.microsoft.com/en-us/free/ for instructions to obtain an API key. 
 
 ## Installation
 Download the source code using the following command line in terminal:
