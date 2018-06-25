@@ -19,7 +19,9 @@ def main():
     print("a). Replace the profanity with asterisks")
     print("b). Change the profanity into word/words of your own choice")
     print("c). Show profanity anyways")
+    print("-------------------------------------------")
     print("type a or b or c to confirm your decision")
+    print("-------------------------------------------")
     clean = input()
     translated_text = translated_text.split()
 
